@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/toss/tossface/dist/tossface.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="asset/style.css">
+    <title>✏️ HWYD</title>
+</head>
+
+<body>
+    <h1><a href="">📝 HWYD?</a></h1>
+    <section class="splash">
+        <p id="emotion"></p>
+        <h2>HOW WAS <span>YOUR DAY</span>?</h2>
+    </section>
+
+    <main class="hide">
+        <section id="set">
+            <h2>오늘 하루 어땠나요?</h2>
+            <div class="select-emotion"></div>
+            <input type="text" id="title" maxlength="40" placeholder="제목을 입력하세요" required>
+            <textarea id="content" placeholder="내용을 입력하세요" required></textarea>
+            <button class="btn-save" onclick="saveMemo()">메모하기</button>
+        </section>
+        <section id="display">
+            <h2 class="a11y-hidden">메모 목록</h2>
+        </section>
+    </main>
+
+    <footer>
+        <copyright>Copyrightⓒ2023 by <a href="https://github.com/JAYCODE-git/HWYD" target="_blank">JAYCODE</a>
+        </copyright>
+    </footer>
+    <script src="asset/script.js"></script>
+</body>
+
+</html>

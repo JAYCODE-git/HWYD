@@ -129,7 +129,6 @@ function getMemo() {
     display.innerHTML = '';
     const frag = document.createDocumentFragment();
 
-    const frag = document.createDocumentFragment();
     allMemo.forEach(item => {
 
         // code ...
@@ -137,6 +136,7 @@ function getMemo() {
         frag.prepend(memoListItem);
         memoListItem.append(memoEmotion, memoTitle, memoContent, memoDelete, memoEdit, memoDate);
     }
+
     display.append(frag);
 };
 ```
@@ -144,4 +144,5 @@ function getMemo() {
 <br><br>
 
 ## 참조
-https://toss.im/tossface
+- https://toss.im/tossface
+- https://campaign.naver.com/nanumsquare_neo/#introduce
